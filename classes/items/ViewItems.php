@@ -1,12 +1,28 @@
 <?php
+
+namespace classes\items;
+
 /**
- * Created by PhpStorm.
- * User: unixhero
- * Date: 09.09.18
- * Time: 21:56
+ * Class ViewItems
+ * @package classes\items
  */
-
-class ViewItems
+class ViewItems extends Item
 {
+    /**
+     * A function, which returns all earning datasets from the database.
+     *
+     * @return int
+     */
+    public function getEarnings()
+    {
+        $earnings = $this->Database->query("SELECT * FROM earnings");
 
+        foreach($earnings as $key => $earning)
+        {
+            echo $earning["label"].": ";
+            echo $earning["price"]."€";
+            echo "<br><br>";
+        }
+        return 0;
+    }
 }

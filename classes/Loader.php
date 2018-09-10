@@ -1,9 +1,11 @@
 <?php
 
+namespace classes;
+use classes\items\ViewItems;
+
 /**
- * This is the main class
- *
  * Class Loader
+ * @package classes
  */
 class Loader
 {
@@ -17,5 +19,14 @@ class Loader
     public function __construct()
     {
 
+    }
+
+    /**
+     * The main function, which calls all needed classes an functions.
+     */
+    public function main()
+    {
+        $ViewItems = new ViewItems();
+        $ViewItems->getEarnings();
     }
 }

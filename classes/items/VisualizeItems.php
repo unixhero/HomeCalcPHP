@@ -1,12 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: unixhero
- * Date: 09.09.18
- * Time: 21:56
- */
 
-class VisualizeItems
+namespace classes\items;
+
+/**
+ * Class VisualizeItems
+ * @package classes\items
+ */
+class VisualizeItems extends Item
 {
 
 }

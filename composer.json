@@ -1,0 +1,10 @@
+{
+  "autoload": {
+    "psr-4": {
+      "classes\\": "classes",
+      "classes\\Loader\\": "classes/Loader",
+      "classes\\database\\": "classes/database/",
+      "classes\\items\\": "classes/items/"
+    }
+  }
+}

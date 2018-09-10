@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>HomeCalc</title>
-        <!-- integrate Bootstrap, jQuery and Less-Files -->
-    </head>
-    <body>
+<?php
+require_once __DIR__."/vendor/autoload.php";
+use classes\Loader;
 
-    </body>
-</html>
+$Loader = new Loader();
+$Loader->main();
